@@ -1,13 +1,76 @@
-body {
+/* Reset CSS */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  border:0;
+  font-family: 'DM Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.sidebar {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #7ECA9C;
+  color: #FFFFFF;
+  text-align: center;
+  overflow-x: hidden;
+}
+.sidebar-mahoni-logo {
+  padding: 50px 0;
+}
+.sidebar-menu {
+  text-align: left;
+}
+.sidebar-menu a {
+  padding: 15px 0 15px 40px;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+}
+.sidebar-menu a:hover {
+  background-color: #FFFFFF;
+  color: #4AA96C;
+}
+.sidebar-menu i {
+  margin-right: 10px;
+}
+.sidebar-footer {
+  width: 300px;
+  position: fixed;
+  bottom: 30px;
+  text-align: center;
+}
+.sidebar-footer img {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 10px;
+}
+.sidebar-footer-tanggal {
+  font-size: 12px;
+}
+
+.main-page {
+  margin-left: 300px;
+  padding: 0 40px 40px 40px;
+}
+
+.header {
+  margin: 30px 0;
+}
+.header p {
+  margin: 0;
+  padding: 0;
+  color: #4AA96C;
+}
+.header h1 {
+  font-size: 22px;
 }
